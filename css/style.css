@@ -1,0 +1,81 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    height: 960px;
+    display: grid;
+    gap: 40px 0;
+    font-weight: 400;
+}
+.header {
+    background-image: url(/images/main-screen__bgc.png);
+    /* background-size: 100% 830px; */
+}
+.header .context-menu {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-content: center;
+}
+.header .context-menu .logo {
+    padding-left: 20%;
+}
+.header .context-menu .menu{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.header .context-menu .autorization-button  {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 183px;
+    height: 44px;   
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #000;
+}
+.header .content {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+.header .content .link {
+    grid-area: 1 / 2;
+}
+
+.header .content .time-counter {
+    grid-area: 2 / 2;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 20px;
+    justify-content: start;
+}
+
+.header .content .time-counter .time-counter__ietm {
+    width: 115px;
+    height: 112px;
+    background-color: #121212;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.header .content .time-counter .time-counter__ietm h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.header .statistics-menu {
+    align-self: end;
+    display: grid;
+
+    height: 130px;
+    background-color: #121212;
+}
